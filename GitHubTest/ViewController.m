@@ -16,10 +16,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIView *firstSubView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, 200, 300)];
-    firstSubView.backgroundColor = UIColor.darkGrayColor;
+    UIView *firstSubview = [[UIView alloc] initWithFrame:CGRectMake(50, 100, 200, 300)];
+    firstSubview.backgroundColor = UIColor.grayColor;
 
-    [self.view addSubview:firstSubView];
+    UILabel *secondSubview = [[UILabel alloc] initWithFrame:CGRectMake(50, 420, 200, 30)];
+    secondSubview.text = @"My first github project";
+    secondSubview.textAlignment = NSTextAlignmentCenter;
+
+    [self.view addSubview:firstSubview];
+    [self.view addSubview:secondSubview];
 }
 
 
